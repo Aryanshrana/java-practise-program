@@ -6,8 +6,8 @@ class Regex1 {
     public static void main(String[] args) {
 
         // 3 ways to write reges example in java
-        Pattern p = Pattern.compile(".s");
-        Matcher m = p.matcher("as");
+        Pattern p = Pattern.compile(".y");
+        Matcher m = p.matcher("ay");
         boolean b = m.matches();
 
         boolean f = Pattern.compile("..f").matcher("qkf").matches();
@@ -41,7 +41,21 @@ class Regex1 {
 
         // Regex metacharacters
 
+        /*
+         * \\d digit from [0-9]
+         * \\D non digit[^o-9]
+         * \s any white space characters[\t\n\x0B\f\r]
+         * \S any non white space characters [^\s]
+         * \w any word character
+         * \W any non word character
+         * \b a word boundary
+         */
+
         // regex metacharacters works as shortcuts
+
+        System.out.print(Pattern.matches("\\d*", "9849290") + "  ");
+        System.out.print(Pattern.matches(".\s", "c ") + "  ");
+        System.out.println(Pattern.matches("\\D+", "jhf uhuhr"));
 
     }
 }
