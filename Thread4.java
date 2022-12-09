@@ -1,4 +1,3 @@
-package Threadsprogram;
 
 // giving reference of runnable interface
 public class Thread4 implements Runnable {
